@@ -28,19 +28,31 @@ module.exports = function(grunt){
     },
     watch: {
       options: {
-        liverelead: true
+        livereload: true
       },
       js: {
-        files: 'app/javascripts/**/*.js',
+        files: 'app/javascripts/*.js',
         tasks: []
       },
       sass: {
-        files: 'app/sass/**/*.{scss, sass}',
+        files: 'app/sass/*.sass',
         tasks: ['compass']
       },
       html: {
         files: 'app/template/**/*.jade',
         tasks: ['jade']
+      },
+
+    },
+    connect: {
+      server: {
+        options: {
+          port:3000,
+          base: ['./app', './bower_components'],
+          hostname: 'localhost',
+          livereload: true,
+          open: true
+        }
       }
     }
 
@@ -50,8 +62,9 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Register Tasks
-  grunt.registerTask('default', ['compass', 'jade', 'watch']);
+  grunt.registerTask('default', ['compass', 'jade', 'connect', 'watch']);
 
 }

@@ -1,0 +1,21 @@
+{
+  "name": "parallaxSass",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Tulio Navarro <tnavarrodesenvolvimento@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6"
+  }
+}

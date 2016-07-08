@@ -1,7 +1,73 @@
-html
-  header
+doctype html
+html(lang="pt")
+  head
+    meta(charset="utf-8")
+    title Parallax Sass
+    meta(name="description", content="")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="./bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="./css/main.css")
+    link(rel="icon", type="images/png", href="images/favicon.png")
+  
   body
-    h1 Titulo do site
-    .container 
-      .center
+    
+    header.parallax-top
+      .passaros-back
+      .logo 
+        img(src="./images/logo.png")
+        
+      .passaros-front
+      
+    section.container
+      article.col-sm-8.col-sm-offset-2
+        
+        h1.text-center MODELO DE PARALLAX
+      
+        hr
+        
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+        hr
+        
+        .galeria
+          figure.col-sm-4
+            img(src="./images/galeria/galeria-1.jpg")
+          
+          figure.col-sm-4
+            img(src="./images/galeria/galeria-2.jpg")
+            
+          figure.col-sm-4
+            img(src="./images/galeria/galeria-3.jpg")
+          
+          figure.col-sm-4
+            img(src="./images/galeria/galeria-4.jpg")    
+          
+          figure.col-sm-4
+            img(src="./images/galeria/galeria-5.jpg")   
+          
+          figure.col-sm-4
+            img(src="./images/galeria/galeria-6.jpg")   
+        
+        hr
+        
+        h1.text-center MODELO DE PARALLAX
+      
+        hr
+        
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        hr
+        
+        .col-sm-12.full-img
+          h2 TEXTO AQUI!</br>
+            small Sub texto aqui
+          
+          button.btn.btn-open VEJA MAIS
+
+    
+    footer
+    
+    script(src="./jquery/dist/jquery.min.js")
+    script(src="./javascripts/app.js")
       
